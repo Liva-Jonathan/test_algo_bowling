@@ -5,6 +5,9 @@ public class Throw {
     private boolean isStrike;
     private boolean isSpare;
 
+    public Throw() {
+    }
+
     public Throw(int nbKnockedDownPins, boolean isStrike, boolean isSpare) {
         this.nbKnockedDownPins = nbKnockedDownPins;
         this.isStrike = isStrike;

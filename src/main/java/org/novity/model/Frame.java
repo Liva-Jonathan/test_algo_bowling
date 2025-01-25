@@ -11,6 +11,10 @@ public class Frame {
         this.nextFrame = nextFrame;
     }
 
+    public Frame(List<Throw> frameThrows) {
+        this.frameThrows = frameThrows;
+    }
+
     public List<Throw> getFrameThrows() {
         return frameThrows;
     }
