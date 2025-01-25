@@ -1,10 +1,14 @@
 package org.novity.strategy;
 
+import org.novity.constant.BowlingGameConstant;
 import org.novity.model.Frame;
+import org.novity.model.Throw;
 
-public class StrikeScoreStrategy implements ScoreStrategy {
+public class StrikeScoreStrategy extends BonusScoreStrategy {
+    private static final int strikeBonusThrow = 3;
+
     @Override
     public int calculateScore(Frame frame) {
-        return 0;
+        return BowlingGameConstant.totalPins + this.calculateBonusScore(frame, strikeBonusThrow);
     }
 }
