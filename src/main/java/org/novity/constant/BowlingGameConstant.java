@@ -8,4 +8,5 @@ public interface BowlingGameConstant {
     String throwSeparator = ",";
     String frameSeparator = " ";
     int throwPerFrame = 3;
+    int gameFrame = 5;
 }
